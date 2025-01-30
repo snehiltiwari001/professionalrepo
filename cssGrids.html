@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: pink;
+            border: 20px blue solid ;
+            padding: 80px;
+            display: grid;  /*property without which grid cannot be made*/
+            /* grid-template-columns: 30% auto 50%;
+            grid-template-rows: 100px 200px 300px; */
+
+            grid-template: 150px 100px/auto 20% 40%;
+            /* grid-row-gap: 5px;
+            grid-column-gap: 5px; */
+            grid-gap: 5px 10px;
+
+        }
+        .item{
+            border: 5px green solid;
+            padding: 8px;
+            background-color: lightgreen;
+        }
+
+        /* #i3{
+            /* grid-row-start: 2;
+            grid-row-end: span 3 ; */
+            /* grid-row: 2/span 2; */
+        /* }  */
+
+        /* #i7{
+            /* grid-column-start:4;
+            grid-column-end: span 2 ;
+             */
+             /* grid-column: 4/span 2; */
+        /* } */ 
+
+        /* #i9{
+            grid-area: 3/5/span 1/span 2;
+            /* grid-row-start/grid-column-start/ grid-row-end/ grid-column-end */
+        /* }  */
+
+        .dish{
+            grid-column: 1/span 3 ;
+            border: 5px red dotted;
+        }
+        #i1{
+            grid-column: 1/span 3;
+            /* margin: auto; */
+            border: 5px green solid;
+        }
+
+        #i{
+            grid-row: 3 / span 4;
+            border: 5px magenta dashed;
+
+        }
+
+        #p{
+            grid-row: 7 / span 4;
+            border: 5px maroon dashed;
+        }
+
+        #footer{
+            grid-row: 11/ span 1;
+            border: 5px black dotted;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item" id="i3">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item" id="i7">Item7</div>
+        <div class="item">Item8</div>
+        <div class="item" id="i9">Item9</div> -->
+
+        <div class="dish" id="di">Famous dishes of India</div>
+        <div class="img" id="i1">
+            <img src="images\dish1.webp" alt="" height="70px">
+            <figcaption>dish1</figcaption>
+        
+        </div>
+        <div class="img" id="i">
+            <img src="images\dish2.webp" alt="" height="70px">
+            <figcaption>dish2</figcaption>
+        </div>
+        <div class="img" id="i">
+            <img src="images\dish3.webp" alt="" height="70px">
+            <figcaption>dish3</figcaption>
+        </div>
+        <div class="img" id="i">
+            <img src="images\dish4.webp" alt="" height="70px">
+            <figcaption>dish4</figcaption>
+        </div>
+        <div class="img" id="p">
+            <img src="images\dish5.webp" alt="" height="70px">
+            <figcaption>dish5</figcaption>
+        </div>
+        <div class="para"  id="p">fajwbfiulacnahf</div>
+        <div class="foot" id="footer">Footer</div>
+        </div>
+
+    </div>
+</body>
+</html>

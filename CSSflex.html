@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            padding: 30px;
+            border: 2px red solid;
+            display: flex;    
+            /* justify-content: ;  -- aligns item horizontally */
+            /* justify-content: flex-start; */ /*item on left*/
+            /* justify-content: center; */
+            /* justify-content: flex-end; */    /*item on right*/
+
+            /* align-items: ;   -- aligns items verically*/
+            /* align-items: flex-end; */
+            /* justify-content: flex-start; */
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* align-items: center; */
+            /* height: 500px; */ 
+            min-height: 500px;  /* adjusts container sixe according to  size of items*/
+
+            /* flex-direction: column;  direction of items now vertical */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+            /* justify-content:space-between; */
+            /* justify-content: space-around;   equal spaces between left and right */
+            /* justify-content: space-evenly ; equal space beteween even the  left and right items */
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 500px;
+
+
+        }
+
+        .item{
+            background-color: lightcoral;
+            width: 50px;
+            height: 50px;
+            border: 2px purple solid;
+            color: green;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 20px;
+            display: flex;
+            justify-content: center;    /*horizontal center*/
+            align-items: center;      /* vertical center*/
+           /* flex-shrink: 1; 1 for enable, 0 for disable */
+           flex-grow: 5;
+        }
+
+        #i1{
+            /* flex-shrink: 0; */
+            /* flex-grow: 5; */
+            /* align-self: center; */
+            margin-right: auto;
+
+        }
+
+        @media(max-width:500px){
+            .container{
+                flex-wrap: wrap;
+                background-color: grey;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+    </div>
+</body>
+</html>

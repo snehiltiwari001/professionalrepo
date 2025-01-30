@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <form action="#" method="post">   <!-- post for private-->
+        <label for="uname">Enter Name: </label>
+        <input type="text" name="uname" id="uname" size="25" maxlength="30" placeholder="Enter your name"
+            value="Sarthak" required>
+        <br><br>
+
+        <label for="pass">Enter password: </label>
+        <input type="password" name="pass1" id="pass" placeholder="password should be atleast 8 characters" size="30"
+            required>
+        <br><br>
+
+        <label for="email">Enter email: </label>
+        <input type="email" name="email" id="email" required>
+        <br><br>
+
+        <label for="review">Write a movie review: </label>
+        <br>
+        <textarea name="review" id="review" rows="9" cols="40">This is a good movie</textarea>
+        <br><br>
+        <label for="lang">Choose the language you  know: </label>
+        <input type="checkbox" name="lang1" id="hin" value="Hindi">
+        <label for="hin">Hindi</label> <!--this label enablis the text to be used to select the option-->
+        <input type="checkbox" name="lang1" id="eng" checked value="Eng">
+        <label for="eng">English</label>
+        <input type="checkbox" name="lang1" id="span" value="Spanish">
+        <label for="span">Spanish</label>
+        <input type="checkbox" name="lang1" id="fre" value="French">
+        <label for="fre">French</label>
+        <br><br>
+
+        <label for="qualification">What are your qualifications</label>
+        <input type="radio" name="quali" id="btech" value="btech">
+        <label for="btech">btech</label>
+        <input type="radio" name="quali" id="mtech" value="mtech" checked>
+        <label for="mtech">mtech</label>
+        <input type="radio" name="quali" id="bba" value="bba" checked> <!-- two "checked" used, 2nd one ovewrites the 1st one-->
+        <label for="bba">bba</label>
+        <input type="radio" name="quali" id="mba" value="mba">
+        <label for="mba">mba</label>
+
+        <br><br>
+        <label for="statesel">Choose your state: </label><br>
+        <select name="statesel" id="statesel" size="" >  <!--multiple-->
+            <option value="sel">Select state</option>
+            <option value="punj">Pubjab</option>
+            <option value="hp">Himachal</option>
+            <option value="har" </option>Haryana</option>   <!--selected-->
+            <option value="ass">Assam</option>
+        
+        </select>
+        <br><br>
+
+        <label for="selfile">Choose file: </label>
+        <input type="file" name="selfile" id="selfile">
+        <br>
+        <label for="selimg">Choose image: </label>
+        <input type="file" name="selimg" id="selimg" accept="image/">
+        
+        <br><br>
+        <input type="submit" name="submitform" id="submitform" value="submit form">
+        <input type="reset" name="resetform" id="resetform" value="Reset Form">
+        <br>
+        <input type="image" name="imgbtn" id="imgbtn" src="images\submit.webp" width="100" height="60">
+
+    </form>
+</body>
+
+</html>
